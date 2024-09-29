@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="db0be0a761a74a04a4d770ca0453868c" Name="Diagram1">
+        <EntityTypeShape EntityType="LocalDatabaseModel.Cart" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDatabaseModel.MsStationery" Width="1.5" PointX="3.875" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDatabaseModel.MsUser" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDatabaseModel.TransactionDetail" Width="1.5" PointX="3.875" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDatabaseModel.TransactionHeader" Width="1.5" PointX="3.875" PointY="2" IsExpanded="true" />
+        <AssociationConnector Association="LocalDatabaseModel.FK_Cart_ToMsStationery" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDatabaseModel.FK_Cart_ToMsUser" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDatabaseModel.FK_TransactionDetail_ToMsStationery" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDatabaseModel.FK_TransactionHeader_ToMsUser" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDatabaseModel.FK_TransactionDetail_ToTransactionHeader" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
